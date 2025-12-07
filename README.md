@@ -1,4 +1,4 @@
-# The Truth
+#The Truth
 
 Hello since the 2b2t community is unaware I am making this post to warn everyone about this group of people. oHare "Camden Rodriguez", developer of phobos hacked client, was indicted on several serious offenses related to child extortion. He has been engaged in this degenerate behaviour before he even joined anarchy (2017) and this group predates CVLT/HN/764. Bradley Cadenhead, a founding member of 764, has stated in an interview that 764 was inspired by "Greggy's Cult" due to the media attention it received for blackmailing people into self-harm. Other people in this community obviously knew about this, and there are several other exposed pedophiles in Phobos/Hyperion such as Vunq (groomed an underage girl into cutting, asking 291k for the video) and Megyn (dated a 15 year old). 
 
@@ -22,12 +22,12 @@ oHares github which is now private: (https://github.com/colorblindness)
 
 If anyone has more information please contact "vmemtmbr" on discord.
 
-# Legal Notice:
+#Legal Notice:
 This document summarizes publicly available information from official sources such as the U.S. Department of Justice and major news outlets.
 All individuals are presumed innocent until proven guilty.
 No harmful, explicit, or unverified content is hosted here.
 
-# Purpose
+#Purpose
 
 This repository compiles verified public documents about recent federal cases involving online extortion and cyber-harassment. Some publicly reported individuals had activity in gaming communities, so this is provided for awareness only.
 
