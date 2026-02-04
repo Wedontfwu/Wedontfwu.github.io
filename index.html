@@ -1,86 +1,71 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Interactive timeline of Anarchy Clients with multiple view modes and themes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Anarchy Client Timeline</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!--
-    Horizontal Timeline
-    - Reads events from timeline.json (same folder).
-    - To change content, edit timeline.json only.
-    - Each event should include: name, description, month, year.
-  -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="site-header">
     <div class="header-content">
-      <h1 class="site-title">Anarchy Client Timeline</h1>
-      <p class="site-subtitle">Timeline Of Various Anarchy Clients</p>
+      <div class="header-titles">
+        <h1 class="site-title">Anarchy Client Timeline</h1>
+        <p class="site-subtitle">Timeline Of Various Anarchy Clients</p>
+      </div>
+      
+      <div class="controls">
+        <div class="control-group">
+          <label for="view-mode" class="control-label">View</label>
+          <select id="view-mode" class="control-select">
+            <option value="graph">Graph</option>
+            <option value="horizontal">Horizontal</option>
+            <option value="vertical">Vertical</option>
+          </select>
+        </div>
+
+        <div class="control-group">
+          <label for="theme-select" class="control-label">Theme</label>
+          <select id="theme-select" class="control-select">
+            <option value="default">Default</option>
+            <option value="cyberpunk">Cyberpunk</option>
+            <option value="minimal">Minimal</option>
+            <option value="retro">Retro</option>
+          </select>
+        </div>
+
+        <div class="control-divider"></div>
+
+        <button id="scroll-left" class="control-btn" aria-label="Scroll left">←</button>
+        <button id="scroll-right" class="control-btn" aria-label="Scroll right">→</button>
+
+        <div class="control-group">
+          <label for="sort-order" class="control-label">Sort</label>
+          <select id="sort-order" class="control-select" aria-label="Sort order">
+            <option value="asc">Oldest → Newest</option>
+            <option value="desc">Newest → Oldest</option>
+          </select>
+        </div>
+      </div>
     </div>
-    <nav class="controls" aria-label="Timeline controls">
-      <!-- View Switcher -->
-      <div class="control-group">
-        <label for="view-mode" class="control-label">View:</label>
-        <select id="view-mode" aria-label="View mode">
-          <option value="graph">Graph</option>
-          <option value="horizontal">Horizontal</option>
-          <option value="vertical">Vertical</option>
-        </select>
-      </div>
-
-      <!-- Theme Switcher -->
-      <div class="control-group">
-        <label for="theme-select" class="control-label">Theme:</label>
-        <select id="theme-select" aria-label="Color theme">
-          <option value="default">Default</option>
-          <option value="cyberpunk">Cyberpunk</option>
-          <option value="minimal">Minimal</option>
-          <option value="retro">Retro</option>
-        </select>
-      </div>
-
-      <div class="divider" role="separator"></div>
-
-      <button id="scroll-left" aria-label="Scroll left" title="Scroll Left">
-        <span aria-hidden="true">&larr;</span>
-      </button>
-      <button id="scroll-right" aria-label="Scroll right" title="Scroll Right">
-        <span aria-hidden="true">&rarr;</span>
-      </button>
-
-      <div class="control-group">
-        <label for="sort-order" class="control-label">Sort:</label>
-        <select id="sort-order" aria-label="Sort order">
-          <option value="asc">Oldest → Newest</option>
-          <option value="desc">Newest → Oldest</option>
-        </select>
-      </div>
-    </nav>
   </header>
 
-  <main>
-    <div id="loading" class="loading" aria-live="polite">
-      <div class="loading-spinner"></div>
-      <p>Loading timeline...</p>
-    </div>
-    <section id="timeline-wrapper" class="timeline-wrapper" aria-label="Timeline events">
-      <div id="timeline" class="timeline" role="feed" tabindex="0" aria-busy="true">
-        <!-- Events will be injected here -->
+  <main class="main-content">
+    <div id="timeline-wrapper" class="timeline-wrapper" role="region" aria-label="Timeline">
+      <div id="timeline" class="timeline" tabindex="0">
+        <div class="loading">Loading timeline...</div>
       </div>
-    </section>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <small>Timeline source: <code>timeline.json</code> — edit that file to update the timeline</small>
+    <p>Timeline data from <code>timeline.json</code></p>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
-
 </html>

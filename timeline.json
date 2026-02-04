@@ -2,189 +2,189 @@
   {
     "name": "Zombe’s Modpack",
     "description": "Added Fly, noclip, macros",
-    "month": 12,
+    "month": "December",
     "year": 2010,
     "color": "#A879BE"
   },
   {
     "name": "INVedit",
     "description": "Very early style of exploiting mc by taking advantage of mc not validate inventories server-side.",
-    "month": 12,
+    "month": "December",
     "year": 2010,
     "color": "#A879BE"
   },
   {
     "name": "Wolfram",
     "description": "Often known as one of the first true hacked clients used on 2b2t",
-    "month": 8,
+    "month": "August",
     "year": 2011,
     "color": "#A879BE"
   },
   {
     "name": "Nodus",
     "description": "Widely used on 2b2t. Not the first client, but the first to dominate. Many players associate “early 2b2t hacking” with Nodus",
-    "month": 7,
+    "month": "July",
     "year": 2012,
     "color": "#A879BE"
   },
   {
     "name": "Wurst",
     "description": "First client to have NCP bypasses",
-    "month": 5,
+    "month": "June",
     "year": 2014,
     "color": "#A879BE"
   },
   {
     "name": "Vapid/V/NoVa",
     "description": "Client created by Pyrobyte, continued by kinorana after 2013",
-    "month": 7,
+    "month": "July",
     "year": 2014,
     "color": "#A879BE"
   },
   {
     "name": "WWE/Inertia",
     "description": "A free utility mod with over 470 thousand downloads, featuring advanced combat and render modules. Formerly known as WWE Client, the name was changed due to DMCA infringement",
-    "month": 8,
+    "month": "August",
     "year": 2014,
     "color": "#A879BE"
   },
   {
     "name": "Metro",
     "description": "Popular client used in 2015 on the 1.8 version of Minecraft. Nearly every cheat worked except for flight",
-    "month": 2,
+    "month": "February",
     "year": 2015,
     "color": "#A879BE"
   },
   {
     "name": "Huzuni",
     "description": "Enter story info here",
-    "month": 7,
+    "month": "July",
     "year": 2015,
     "color": "#A879BE"
   },
   {
     "name": "Impact",
     "description": "Impact is a free, closed source, client, and was one of the first to integrate Baritone functionality, an AI pathfinding bot that can navigate. It was made well known during the Rusher War after Rusher's advertisement and through eventually use of many 2b2t YouTubers. It has seen much use, however has not been updated since around 2021, and has become outdated. Many of its modules have stopped functioning on 2b2t, due to the evolving anticheat, but many casual players still can make good use of it thanks to an easy to use GUI, and easily configurable modules.",
-    "month": 6,
+    "month": "June",
     "year": 2016,
     "color": "#A879BE"
   },
   {
     "name": "5zig Mod",
     "description": "Client used in June and July 2016 to get into 2b2t easier due to queue issues. Made completely irrelevant after AutoReconnect was popularized in Wurst and Impact. 5zig Mod isn't an actual cheat client but is a forge mod",
-    "month": 6,
+    "month": "June",
     "year": 2016,
     "color": "#A879BE"
   },
   {
     "name": "Future",
     "description": "A paid client advertised by Fit and several other 2b2t YouTubers. It is a very popular client as a result, and is used by many. It has highly powerful PvP modules.",
-    "month": 8,
+    "month": "August",
     "year": 2016,
     "color": "#A879BE"
   },
   {
     "name": "Kinodupe",
     "description": "Client that only existed for 6 whole days during the 11/11 dupe. Its only purpose was to make duping easier during the 11/11 dupe. However, using this client would leak your coords.",
-    "month": 11,
+    "month": "November",
     "year": 2016,
     "color": "#A879BE"
   },
   {
     "name": "Xdolf",
     "description": "An updated version of the private Adolf client from 1.7.2, with some niche additions.",
-    "month": 2,
+    "month": "February",
     "year": 2017,
     "color": "#A879BE"
   },
   {
     "name": "SkillClient",
     "description": "Known for being the first free client with entity speed",
-    "month": 9,
+    "month": "September",
     "year": 2017,
     "color": "#A879BE"
   },
   {
     "name": "KAMI",
     "description": "One of the first clients to have AutoCrystal",
-    "month": 7,
+    "month": "July",
     "year": 2018,
     "color": "#A879BE"
   },
   {
     "name": "GlowClient",
     "description": "Created by GlowskiBroski, was one of the early clients to have PacketFly and had other unique hacks.",
-    "month": 12,
+    "month": "December",
     "year": 2018,
     "color": "#A879BE"
   },
   {
     "name": "Kami Blue",
     "description": "An open-source rewrite of KAMI which was historically known for having excellent elytraflight bypasses for 2b2t, along with features similar to paid clients and proper Baritone integration",
-    "month": 10,
+    "month": "October",
     "year": 2019,
     "color": "#A879BE"
   },
   {
     "name": "Salhack",
     "description": "A client made by Ionar2 went open-source due to the unobfuscated jar being leaked",
-    "month": 5,
+    "month": "June",
     "year": 2020,
     "color": "#A879BE"
   },
   {
     "name": "Pyro",
     "description": "A crystal PvP client with some bypasses developed by GiantNuker and Ionar2 (former developer of Salhack). Was previously used for duping items since late September of 2020.",
-    "month": 9,
+    "month": "September",
     "year": 2020,
     "color": "#A879BE"
   },
   {
     "name": "Wurst+2",
     "description": "Known for its advanced AutoCrystal at the time",
-    "month": 9,
+    "month": "September",
     "year": 2020,
     "color": "#A879BE"
   },
   {
     "name": "FamilyFunPack",
     "description": "Enter story info here",
-    "month": 10,
+    "month": "October",
     "year": 2020,
     "color": "#A879BE"
   },
   {
     "name": "Ares",
     "description": "A free, open-source utility mod with great combat modules and a unique GUI and HUD. It is currently developed by Tigermouthbear.",
-    "month": 11,
+    "month": "November",
     "year": 2020,
     "color": "#A879BE"
   },
   {
     "name": "WurstPlusThree",
     "description": "",
-    "month": 5,
+    "month": "June",
     "year": 2021,
     "color": "#A879BE"
   },
   {
     "name": "Lambda",
     "description": "An open-source, therefore free, continuation of now discontinued KAMI Blue. It provides regular updates, and thanks to it being open-source, anyone can contribute. It features a stunningly visionary plugin system, allowing for hot-loading of plugins while in game, to allow for immense customization and quick changes, without reloading Minecraft. It has many advanced utility modules, and can be used for PvP as well, but is more geared towards more casual players.",
-    "month": 6,
+    "month": "June",
     "year": 2021,
     "color": "#A879BE"
   },
   {
     "name": "Mahanware",
     "description": "Exploit client developed by Lord_Mahan (based on KAMI). Known for Auto-duper and an adaptation of NoCom Tracker & Spiral modules.",
-    "month": 7,
+    "month": "July",
     "year": 2021,
     "color": "#A879BE"
   },
   {
     "name": "Mio-Fabric",
     "description": "Well known 2b client for its advanced combat modules and grim bypasses.",
-    "month": 7,
+    "month": "July",
     "year": 2024,
     "color": "#A879BE"
   }
