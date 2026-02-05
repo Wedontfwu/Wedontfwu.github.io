@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Zombe’s Modpack",
+    "description": "Added Fly, noclip, macros",
+    "month": 12,
+    "year": 2010,
+    "color": "#A879BE"
+  },
+  {
+    "name": "INVedit",
+    "description": "Very early style of exploiting mc by taking advantage of mc not validate inventories server-side.",
+    "month": 12,
+    "year": 2010,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Wolfram",
+    "description": "Often known as one of the first true hacked clients used on 2b2t",
+    "month": 8,
+    "year": 2011,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Nodus",
+    "description": "Widely used on 2b2t. Not the first client, but the first to dominate. Many players associate “early 2b2t hacking” with Nodus",
+    "month": 7,
+    "year": 2012,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Wurst",
+    "description": "First client to have NCP bypasses",
+    "month": 5,
+    "year": 2014,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Vapid/V/NoVa",
+    "description": "Client created by Pyrobyte, continued by kinorana after 2013",
+    "month": 7,
+    "year": 2014,
+    "color": "#A879BE"
+  },
+  {
+    "name": "WWE/Inertia",
+    "description": "A free utility mod that used for its movement modules and dupe modules. Formerly known as WWE Client, the name was changed due to DMCA infringement",
+    "month": 8,
+    "year": 2014,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Metro",
+    "description": "Popular client used in 2015 on the 1.8 version of Minecraft. Nearly every cheat worked except for flight",
+    "month": 2,
+    "year": 2015,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Huzuni",
+    "description": "Enter story info here",
+    "month": 7,
+    "year": 2015,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Impact",
+    "description": "A free client that was one of the first to integrate Baritone functionality. It was made well known during the Rusher War after Rusher's advertisement it.",
+    "month": 6,
+    "year": 2016,
+    "color": "#A879BE"
+  },
+  {
+    "name": "5zig Mod",
+    "description": "Client used in June and July 2016 to get into 2b2t easier due to queue issues. Made completely irrelevant after AutoReconnect was popularized in Wurst and Impact. 5zig Mod isn't an actual cheat client but is a forge mod",
+    "month": 6,
+    "year": 2016,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Future",
+    "description": "A paid client advertised by Fit and several other 2b2t YouTubers. It is a very popular client as a result, and is used by many for It has highly powerful PvP modules. Still used today.",
+    "month": 8,
+    "year": 2016,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Kinodupe",
+    "description": "Client that only existed for 6 whole days during the 11/11 dupe. Its only purpose was to make duping easier during the 11/11 dupe. However, using this client would leak your coords.",
+    "month": 11,
+    "year": 2016,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Xdolf",
+    "description": "An updated version of the private Adolf client from 1.7.2, with some niche additions.",
+    "month": 2,
+    "year": 2017,
+    "color": "#A879BE"
+  },
+  {
+    "name": "SkillClient",
+    "description": "Known for being the first free client with entity speed",
+    "month": 9,
+    "year": 2017,
+    "color": "#A879BE"
+  },
+  {
+    "name": "KAMI",
+    "description": "One of the first clients to have AutoCrystal",
+    "month": 7,
+    "year": 2018,
+    "color": "#A879BE"
+  },
+  {
+    "name": "GlowClient",
+    "description": "Created by GlowskiBroski, was one of the early clients to have PacketFly and had other unique hacks.",
+    "month": 12,
+    "year": 2018,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Kami Blue",
+    "description": "An open-source rewrite of KAMI which was historically known for having excellent elytraflight bypasses for 2b2t, along with features similar to paid clients and proper Baritone integration",
+    "month": 10,
+    "year": 2019,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Salhack",
+    "description": "A client made by Ionar2 went open-source due to the unobfuscated jar being leaked",
+    "month": 5,
+    "year": 2020,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Pyro",
+    "description": "A crystal PvP client with some bypasses developed by GiantNuker and Ionar2 (former developer of Salhack). Was previously used for duping items since late September of 2020.",
+    "month": 9,
+    "year": 2020,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Wurst+2",
+    "description": "Known for its advanced AutoCrystal at the time",
+    "month": 9,
+    "year": 2020,
+    "color": "#A879BE"
+  },
+  {
+    "name": "FamilyFunPack",
+    "description": "Enter story info here",
+    "month": 10,
+    "year": 2020,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Ares",
+    "description": "A free, open-source utility mod with great combat modules and a unique GUI and HUD. It is currently developed by Tigermouthbear.",
+    "month": 11,
+    "year": 2020,
+    "color": "#A879BE"
+  },
+  {
+    "name": "WurstPlusThree",
+    "description": "A continued rewrite of Wurst+2.",
+    "month": 5,
+    "year": 2021,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Lambda",
+    "description": "continuation of now discontinued KAMI Blue. Still used today but its in aplha stage of its Fabric port.",
+    "month": 6,
+    "year": 2021,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Mahanware",
+    "description": "Exploit client developed by Lord_Mahan (based on KAMI). Known for Auto-duper and an adaptation of NoCom Tracker & Spiral modules.",
+    "month": 7,
+    "year": 2021,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Mio-Fabric",
+    "description": "Well known 2b client for its advanced combat modules and grim bypasses.",
+    "month": 7,
+    "year": 2024,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Sn0w",
+    "description": "Mainly a pvp client that had introduce new features like holesnap timer, chorus manipulation, fast phasewalk that goes down and up, predict surround and some other bypasses.",
+    "month": 3,
+    "year": 2021,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Phobos v1",
+    "description": "3arthqu4ke began as a contributor to Hephatsues, a Kami fork originally made for kznnor, and later created his own fork to experiment and learn Java. After his version was leaked and renamed Phobos, it gained a unique GUI and signature features like YPort, which helped bypass NCP and became a defining identifier of early Phobos.",
+    "month": 12,
+    "year": 2018,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Phobos v2",
+    "description": "Phobos 2 was a full rewrite developed from late 2019 to 2020, attracting heavy attention due to its very advanced combat modules like Autocrystal,Offhand and many more, until its source was stolen and retaliatory malware releases led to one of the largest client rats ever. During this era, 3arthqu4ke also introduced PingBypass, a groundbreaking system that ran modules remotely closer to servers.",
+    "month": 12,
+    "year": 2019,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Phobos Newbase/3arthh4ck",
+    "description": "Newbase marked a complete newbase rewrite that introduced revolutionary modules like PistonAura, SilentSwitch, TickShift, advanced Surrounds, and HoleESP, making it the strongest client of its time. Its popularity exploded through PvP content creators, but later leaks led to public releases making it a public open source client.",
+    "month": 12,
+    "year": 2022,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Phobot",
+    "description": "Phobot is a Fabric addon to the new fabric pingbypass created to be cleaner, more organized, and more modern, supporting Fabric, Forge, and NeoForge. While not stronger than Newbase, it introduced improved extrapolation, CrystalBomb integration, plugin support, and marked 3arthqu4ke’s transition into more maintainable client design.",
+    "month": 12,
+    "year": 2023,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Konas",
+    "description": "A paid client developed by GL_DONT_CARE, Darki, and Auto known for its 2b2t bypass and excellent autocrystal at the time.",
+    "month": 4,
+    "year": 2020,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Boze",
+    "description": "Private client made by the Konas devs now public paid client was known for being one of the first good fabric hacked client for its time.",
+    "month": 12,
+    "year": 2022,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Meteor",
+    "description": "Meteor started as an obfuscated private client and later went open-source on GitHub. While it lacks almost everything for modern anarchy, it’s popular today for its advanced plugin system and large, active dev team.",
+    "month": 3,
+    "year": 2020,
+    "color": "#A879BE"
+  },
+  {
+    "name": "Sydney",
+    "description": "Private client known for inventing the holebuilder module that everyone tries to copy but fails.",
+    "month": 8,
+    "year": 2024,
+    "color": "#A879BE"
+  }
+]

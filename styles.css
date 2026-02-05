@@ -1,0 +1,417 @@
+/* styles.css
+   Robust theming and layout system for timeline.
+*/
+
+:root {
+  /* --- DEFAULT THEME (Dark Blue/Glass) --- */
+  --bg-grad: linear-gradient(180deg, #0f1724 0%, #071026 100%);
+  --text-main: #e6eef8;
+  --text-muted: #9fb0cc;
+  --card-bg: rgba(11, 19, 32, 0.85);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --accent: #4f9cff;
+  --accent-glow: rgba(79, 156, 255, 0.2);
+  --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --card-radius: 12px;
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+
+  /* Layout vars */
+  --timeline-padding: 40px;
+  --card-width: 300px;
+}
+
+/* --- THEMES --- */
+
+/* CYBERPUNK THEME */
+body[data-theme="cyberpunk"] {
+  --bg-grad: repeating-linear-gradient(0deg,
+      transparent 0,
+      transparent 1px,
+      rgba(255, 0, 255, 0.05) 1px,
+      rgba(255, 0, 255, 0.05) 2px),
+    linear-gradient(to bottom, #050011, #120024);
+  --text-main: #00f3ff;
+  --text-muted: #ff00ff;
+  --card-bg: rgba(10, 10, 10, 0.9);
+  --card-border: #00f3ff;
+  --accent: #ff00ff;
+  --accent-glow: #00f3ff;
+  --font-body: 'Courier New', Courier, monospace;
+  --card-radius: 2px;
+  --shadow: 0 0 15px rgba(0, 243, 255, 0.2);
+}
+
+/* MINIMAL THEME */
+body[data-theme="minimal"] {
+  --bg-grad: #f8f9fa;
+  --text-main: #111;
+  --text-muted: #666;
+  --card-bg: #ffffff;
+  --card-border: #eee;
+  --accent: #111;
+  --accent-glow: rgba(0, 0, 0, 0.05);
+  --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --card-radius: 4px;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* RETRO THEME */
+body[data-theme="retro"] {
+  --bg-grad: #000000;
+  --text-main: #33ff33;
+  --text-muted: #22aa22;
+  --card-bg: #001100;
+  --card-border: #33ff33;
+  --accent: #33ff33;
+  --accent-glow: rgba(51, 255, 51, 0.2);
+  --font-body: 'Press Start 2P', cursive, 'Courier New', monospace;
+  /* Fallback to monospace if font not loaded */
+  --card-radius: 0px;
+  --shadow: none;
+}
+
+/* --- BASE STYLES --- */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-grad);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.site-header {
+  padding: 20px 40px;
+  border-bottom: 1px solid var(--card-border);
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  z-index: 100;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.site-subtitle {
+  color: var(--text-muted);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.control-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+select,
+button {
+  background: var(--card-bg);
+  color: var(--text-main);
+  border: 1px solid var(--card-border);
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+select:hover,
+button:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.divider {
+  width: 1px;
+  height: 24px;
+  background: var(--card-border);
+}
+
+/* Main Area */
+main {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  /* Important for different scroll modes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* Default Horizontal Alignment */
+  align-items: center;
+  padding: var(--timeline-padding);
+}
+
+.timeline {
+  /* Base styles (Horizontal by default) */
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  scroll-behavior: smooth;
+  /* Scrollbar Styling */
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+}
+
+.timeline::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+.timeline::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* --- EVENT CARD --- */
+.event {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  min-width: var(--card-width);
+  max-width: var(--card-width);
+  padding: 20px;
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s;
+  flex-shrink: 0;
+  /* Don't shrink in flex row */
+}
+
+.event:hover {
+  transform: translateY(-5px) scale(1.02);
+  border-color: var(--accent);
+  box-shadow: 0 0 20px var(--accent-glow);
+  z-index: 10;
+}
+
+.event-accent {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px var(--accent);
+}
+
+.event-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.event-title {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.event-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-main);
+  opacity: 0.9;
+  margin-top: 5px;
+}
+
+/* --- VIEW MODES --- */
+
+/* 1. VERTICAL VIEW Override */
+.timeline.view-vertical {
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  align-items: center;
+  gap: 0;
+  /* Handled by margins */
+  padding-top: 40px;
+  position: relative;
+}
+
+/* Center line for vertical */
+.timeline.view-vertical::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  width: 2px;
+  background: var(--card-border);
+  transform: translateX(-50%);
+}
+
+.timeline.view-vertical .event {
+  width: 45%;
+  /* Slightly less than half */
+  min-width: unset;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* Alternating sides */
+.timeline.view-vertical .event:nth-child(odd) {
+  margin-right: 50%;
+  /* Push to left */
+  align-items: flex-end;
+  text-align: right;
+  border-right: 3px solid var(--accent);
+  border-left: 1px solid var(--card-border);
+}
+
+.timeline.view-vertical .event:nth-child(even) {
+  margin-left: 50%;
+  /* Push to right */
+  align-items: flex-start;
+  text-align: left;
+  border-left: 3px solid var(--accent);
+  border-right: 1px solid var(--card-border);
+}
+
+/* Connectors for vertical */
+.timeline.view-vertical .event::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 2px;
+  background: var(--accent);
+}
+
+.timeline.view-vertical .event:nth-child(odd)::after {
+  right: -22px;
+}
+
+/* Connect to center */
+.timeline.view-vertical .event:nth-child(even)::after {
+  left: -22px;
+}
+
+/* 2. GRAPH VIEW Override */
+.timeline.view-graph {
+  display: block;
+  /* Standard block for absolute children */
+  overflow: auto;
+  /* Scrollable canvas */
+  position: relative;
+  width: 3000px;
+  /* Force wide canvas */
+  height: 100%;
+  background-image: radial-gradient(var(--card-border) 1px, transparent 1px);
+  background-size: 40px 40px;
+  /* Grid dots */
+}
+
+.timeline.view-graph .event {
+  position: absolute;
+  width: 250px;
+  min-width: unset;
+  /* Top/Left set by JS */
+}
+
+.timeline.view-graph .event::before {
+  /* Dot on the timeline axis if we wanted one, but for now specific positioning */
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  width: 2px;
+  height: 10px;
+  background: var(--accent);
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--card-border);
+  background: var(--card-bg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .controls {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Force vertical view on mobile for usability, or simplify layouts */
+  .timeline.view-vertical .event {
+    width: 90%;
+    margin: 20px 0 !important;
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+
+  .timeline.view-vertical::before {
+    left: 20px;
+  }
+
+  .timeline.view-vertical .event:nth-child(odd),
+  .timeline.view-vertical .event:nth-child(even) {
+    margin: 0 0 20px 40px;
+    border: 1px solid var(--card-border);
+    border-left: 3px solid var(--accent);
+  }
+}
