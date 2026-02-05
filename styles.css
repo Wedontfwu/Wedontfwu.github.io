@@ -4,16 +4,16 @@
 
 :root {
   /* --- DEFAULT THEME (Dark Blue/Glass) --- */
-  --bg-grad: linear-gradient(180deg, #0f1724 0%, #071026 100%);
-  --text-main: #e6eef8;
-  --text-muted: #9fb0cc;
-  --card-bg: rgba(11, 19, 32, 0.85);
-  --card-border: rgba(255, 255, 255, 0.08);
-  --accent: #4f9cff;
-  --accent-glow: rgba(79, 156, 255, 0.2);
+  --bg-grad: linear-gradient(180deg, #0a0a0f 0%, #05050a 100%);
+  --text-main: #dfe6f0;          
+  --text-muted: #7a8a9c;         
+  --card-bg: rgba(20, 28, 42, 0.9); 
+  --card-border: rgba(255, 255, 255, 0.05);
+  --accent: #4f9cff;          
+  --accent-glow: rgba(79, 156, 255, 0.25);
   --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  --card-radius: 12px;
-  --shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --card-radius: 14px;         
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.7); 
 
   /* Layout vars */
   --timeline-padding: 40px;
