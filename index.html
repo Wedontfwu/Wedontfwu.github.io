@@ -1,73 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>The Timeline</title>
-  <link rel="stylesheet" href="styles.css" />
-  <!--
-    Horizontal Timeline
-    - Reads events from timeline.json (same folder).
-    - To change content, edit timeline.json only.
-    - Each event should include: name, description, month, year.
-  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anarchy Client Timeline</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Quick responsive fixes for timeline layout */
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #0f1724;
+      color: #e6eef8;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Responsive timeline */
+    .timeline {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 10px 0;
+    }
+
+    .timeline-card {
+      flex: 0 0 auto; /* don’t shrink */
+      width: 250px;
+      background: rgba(11, 19, 32, 0.85);
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+
+    @media (max-width: 768px) {
+      .timeline {
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+
+      .timeline-card {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
-
 <body>
-  <header class="site-header">
-    <h1 class="site-title">Anarchy Client Timeline</h1>
-    <p class="site-subtitle">Timeline Of Various Anarchy Clients.</p>
-    <div class="controls">
-      <!-- View Switcher -->
-      <div class="control-group">
-        <label for="view-mode" class="control-label">View:</label>
-        <select id="view-mode">
-          <option value="graph">Graph</option>
-          <option value="horizontal">Horizontal</option>
-          <option value="vertical">Vertical</option>
-        </select>
-      </div>
+  <div class="container">
+    <h1>Anarchy Client Timeline</h1>
 
-      <!-- Theme Switcher -->
-      <div class="control-group">
-        <label for="theme-select" class="control-label">Theme:</label>
-        <select id="theme-select">
-          <option value="default">Default</option>
-          <option value="cyberpunk">Cyberpunk</option>
-          <option value="minimal">Minimal</option>
-          <option value="retro">Retro</option>
-        </select>
-      </div>
-
-      <div class="divider"></div>
-
-      <button id="scroll-left" aria-label="Scroll left" title="Scroll Left">&larr;</button>
-      <button id="scroll-right" aria-label="Scroll right" title="Scroll Right">&rarr;</button>
-
-      <div class="control-group">
-        <label for="sort-order" class="control-label">Sort:</label>
-        <select id="sort-order" aria-label="Sort order">
-          <option value="asc">Oldest → Newest</option>
-          <option value="desc">Newest → Oldest</option>
-        </select>
+    <div class="timeline">
+      <!-- Example card, repeat dynamically with JS -->
+      <div class="timeline-card">
+        <h3>Client Name</h3>
+        <p>Description</p>
+        <p><strong>Month:</strong> January</p>
+        <p><strong>Year:</strong> 2010</p>
       </div>
     </div>
-  </header>
+  </div>
 
-  <main>
-    <section id="timeline-wrapper" class="timeline-wrapper" aria-label="Timeline">
-      <div id="timeline" class="timeline" tabindex="0">
-        <!-- Events will be injected here -->
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <small>Timeline source: <code>timeline.json</code> — edit that file to update the timeline.</small>
-  </footer>
-
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
